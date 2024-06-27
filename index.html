@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>GibrasVille</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="subcontainer__container">
+      <div class="title__container">
+        <h1>GibrasVille</h1>
+      </div>
+
+      <table class="table__container" border>
+        <thead>
+          <tr>
+            <td>Nome</td>
+            <td>Telefone</td>
+            <td>Email</td>
+            <td>Lote</td>
+            <td>Numero</td>
+            <td>Ações</td>
+          </tr>
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+      </table>
+
+
+
+    </div>
+
+    <button class="btn" id="call__modal">Novo Morador</button>
+
+    <div class="container__modal" id="modal__modal">
+      <div class="modal">
+        <div class="modal__title">
+          <h2>Novo Morador</h2>
+        </div>
+        <form id="form" class="modal__form">
+          <input class="modal__fields" data-indice="new" type="text" id="nome" placeholder="Nome" required>
+          <input class="modal__fields" type="text" id="telefone" placeholder="Telefone" required>
+          <input class="modal__fields" type="text" id="email" placeholder="Email" required>
+          <input class="modal__fields" type="text" id="lote" placeholder="lote" required>
+          <input class="modal__fields" type="text" id="numero" placeholder="numero" required>
+
+
+        </form>
+
+        <div class="modal__buttons">
+          <button class="btn" id="btn__cadastrar">Cadastrar</button>
+          <button class="btn" id="btn__close">Cancelar</button>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
